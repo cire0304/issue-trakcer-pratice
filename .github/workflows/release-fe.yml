@@ -43,6 +43,7 @@ jobs:
 
     - name: install dependency
       run: npm install
+      working-directory: ${{ env.working-directory }}
     
     - name: Generate build
       run: npm run build
