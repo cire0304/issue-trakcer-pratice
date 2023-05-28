@@ -36,9 +36,13 @@ jobs:
     
     - name: Install dependencies
       run: npm install
+      working-directory: ${{ env.working-directory }}
+
     
     - name: Generate build
       run: npm run build
+      working-directory: ${{ env.working-directory }}
+
       
     # AWS 인증
     - name: Configure AWS credentials
