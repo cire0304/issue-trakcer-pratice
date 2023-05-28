@@ -36,7 +36,6 @@ jobs:
     
     - name: Install npm
       run: sudo apt install npm
-      working-directory: ${{ env.working-directory }}
 
     - name: check npm
       run: npm -v
@@ -44,6 +43,9 @@ jobs:
     - name: install dependency
       run: npm install
       working-directory: ${{ env.working-directory }}
+
+    - name: install CI
+      run: npm ci
     
     - name: Generate build
       run: npm run build
