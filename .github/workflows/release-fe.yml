@@ -33,16 +33,13 @@ jobs:
       
     - name: check Node v
       run: node -v
-
-    - name: install npm
-      run: install npm
-
-    - name: check npm
-      run: npm -v
     
     - name: Install npm
       run: sudo apt install npm
       working-directory: ${{ env.working-directory }}
+
+    - name: check npm
+      run: npm -v
 
     
     - name: Generate build
