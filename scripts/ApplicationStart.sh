@@ -1,3 +1,2 @@
 
-
 sudo systemctl restart nginx
