@@ -41,6 +41,8 @@ jobs:
     - name: check npm
       run: npm -v
 
+    - name: install dependency
+      run: npm install
     
     - name: Generate build
       run: npm run build
